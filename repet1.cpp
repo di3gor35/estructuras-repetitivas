@@ -6,6 +6,7 @@ int main(){
     int res;
     int gasto;
     int suma = 0;
+    cout << "Bienvenido al programa, para calcular el gasto total" << endl;
     cout << "Ingrese el numero de gastos: ", cin >> n;
     for (int i = 1; i <= n; i++){
         cout << "Ingrese el gasto " << i << ": ", cin >> gasto;
