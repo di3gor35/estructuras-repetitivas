@@ -14,10 +14,11 @@ int main(){
     }
     cout << "Desea anadir gastos? (1: si/ 0: no): ", cin >> res; 
     while (res == 1){
-        cout << "Ingrese el gasto: ", cin >> gasto;
+        n++;
+        cout << "Ingrese el gasto " << n << ": ", cin >> gasto;
         suma += gasto;
         cout << "Desea anadir gastos? (1: si/ 0: no): ", cin >> res;
     }
-    cout << "El total de gastos es: " << suma << endl;
+    cout << "El total de gastos es: " << suma << " y la cantidad de gastos ingresados son: " << n;
     return 0;
 }
