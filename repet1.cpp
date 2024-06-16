@@ -8,6 +8,10 @@ int main(){
     int suma = 0;
     cout << "Bienvenido al programa, para calcular el gasto total" << endl;
     cout << "Ingrese el numero de gastos: ", cin >> n;
+    if (n <= 0){
+        cout << "Error, el numero de gastos debe ser mayor que cero" << endl;
+        return 1;
+    }
     for (int i = 1; i <= n; i++){
         cout << "Ingrese el gasto " << i << ": ", cin >> gasto;
         suma += gasto;
