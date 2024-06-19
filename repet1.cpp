@@ -83,5 +83,6 @@ int main(){
         res2 = Validar_Respuesta(2);
         suma = 0;
     } while (res2 == 1);
+    cout << "Gracias por usar el programa";
     return 0;
 }
