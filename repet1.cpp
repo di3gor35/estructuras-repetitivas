@@ -1,4 +1,5 @@
 #include <iostream>
+#include <windows.h>
 using namespace std;
 
 /*
@@ -22,12 +23,12 @@ int Validar_Respuesta(int op){
     bool r2;
     if(op == 1){
         do {
-            cout << "Desea anadir gastos? (1: si/ 0: no): ", cin >> r; 
+            cout << "Desea añadir gastos? (1: si/ 0: no): ", cin >> r; 
             if (r == 1 || r == 0){
                 r2 = true;
             }
             else {
-                cout << "Opcion no valida" << endl;
+                cout << "Opción no válida" << endl;
                 r2 = false;
             }
         } while (r2 == false);
@@ -38,18 +39,18 @@ int Validar_Respuesta(int op){
 	        	r2 = true;
 	        }
 	        else {
-	        	cout << "Opcion no valida" << endl;
+	        	cout << "Opción no válida" << endl;
 	        	r2 = false;
 	        }
         } while (r2 == false);
     } else if (op == 3){
         do {
-            cout << "Ingrese el numero de gastos: ", cin >> r;
+            cout << "Ingrese el número de gastos: ", cin >> r;
             if (r > 0){
 	        	r2 = true;
 	        }
 	        else {
-	        	cout << "Error, el numero de gastos debe ser mayor que cero" << endl;
+	        	cout << "Error, el número de gastos debe ser mayor que cero" << endl;
 	        	r2 = false;
 	        }
         } while (r2 == false);
@@ -58,13 +59,14 @@ int Validar_Respuesta(int op){
 }
 
 int main(){
+	SetConsoleOutputCP(CP_UTF8);
     int n;
     int res;
     int gasto;
     int suma = 0;
     int res2;
     // Bienvenida al programa
-    cout << "Bienvenido al programa, para calcular el gasto total" << endl;
+    cout << "*****BIENVENIDO AL PROGRAMA PARA CALCULAR EL GASTO TOTAL*****" << endl;
     // * Bucle principal
     do {
         n = Validar_Respuesta(3);
